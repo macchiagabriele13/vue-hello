@@ -16,8 +16,11 @@
 <body>
     
 
-    <div id="app">
+    <div id="app" class="d-flex flex-column m-auto w-50">
         <h1>{{title}}</h1>
+        <div class="text-center">
+             <button v-on:@click="generateImage">Clicca qui e genera la tua immagine</button>
+        </div>
         <img :src='randomImage'>
     </div>
     
